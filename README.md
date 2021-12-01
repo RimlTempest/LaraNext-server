@@ -147,12 +147,12 @@ Laravel Sailコマンドをエイリアスに登録することをLaravelで推�
 $ vim ~/.bashrc
 ```
 
-![openBashrc](Docs\img\openBashrc.png "openBashrc")
+![openBashrc](https://github.com/RimlTempest/LaraNext-server/blob/develop/Docs/img/openBashrc.png?raw=true "openBashrc")
 
 2. このように開いたら`alias`と記載の場所までスクロールを行う。
 3. 見つけたらキーボードの`i`を押す。
 
-![vimInsertMode](Docs\img\vimInsertMode.png "vimInsertMode")
+![vimInsertMode](https://github.com/RimlTempest/LaraNext-server/blob/develop/Docs/img/vimInsertMode.png?raw=true "vimInsertMode")
 
 3. Insertと表示されることで入力モードになるので
 
@@ -164,13 +164,13 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 4. キーボードの`esc`を押して入力モードを解除する。
 
-![vimEsc](Docs\img\vimEsc.png "vimEsc")
+![vimEsc](https://github.com/RimlTempest/LaraNext-server/blob/develop/Docs/img/vimEsc.png?raw=true "vimEsc")
 
 このように追記したものがある、かつInsertが消えていることを確認する
 
 5. キーボードの`:`を押す
 
-![coronVim](Docs\img\coronVim.png "coronVim")
+![coronVim](https://github.com/RimlTempest/LaraNext-server/blob/develop/Docs/img/coronVim.png?raw=true "coronVim")
 
 6. `wq`と入力しキーボードの`Enter`を押す
 
