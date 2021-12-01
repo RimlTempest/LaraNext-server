@@ -28,7 +28,7 @@ LaraNextとは`Laravel`の学習用プロジェクトになります。
 
 インフラ    : `Docker`、`MySQL`、`NGINX`  
 使用FW      : `Laravel 8`  
-使用言語    : `PHP 7`
+使用言語    : `PHP 8`
 
 ## プロジェクト構成
 
