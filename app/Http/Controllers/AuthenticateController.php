@@ -153,7 +153,7 @@ class AuthenticateController extends Controller {
         }
 
         $user = User::create(
-            array_marge(
+            array_merge(
                 $validator->validated(),
                 ['password' => bcrypt($request->password)]
             )
