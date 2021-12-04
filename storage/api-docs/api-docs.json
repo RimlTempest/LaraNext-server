@@ -1,0 +1,164 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "LaraNext-server",
+        "description": "LaraNextのAPIサーバ",
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000",
+            "description": "OpenApi host"
+        }
+    ],
+    "paths": {
+        "/login": {
+            "post": {
+                "tags": [
+                    "Authenticate"
+                ],
+                "summary": "ログインを行う",
+                "description": "リクエストをもとにログインを行う",
+                "operationId": "login",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "メッセージ",
+                                            "type": "string",
+                                            "example": "massage"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/logout": {
+            "post": {
+                "tags": [
+                    "Authenticate"
+                ],
+                "summary": "ログアウトを行う",
+                "description": "ログアウトを行う",
+                "operationId": "logout",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "メッセージ",
+                                            "type": "string",
+                                            "example": "massage"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/refresh": {
+            "post": {
+                "tags": [
+                    "Authenticate"
+                ],
+                "summary": "トークンをリフレッシュする",
+                "description": "トークンをリフレッシュする",
+                "operationId": "refresh",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "メッセージ",
+                                            "type": "string",
+                                            "example": "massage"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/register": {
+            "post": {
+                "tags": [
+                    "Authenticate"
+                ],
+                "summary": "アカウントを作成する",
+                "description": "リクエストをもとにアカウントを作成する",
+                "operationId": "register",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "メッセージ",
+                                            "type": "string",
+                                            "example": "massage"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/me": {
+            "get": {
+                "tags": [
+                    "Authenticate"
+                ],
+                "summary": "認証アカウント情報",
+                "description": "認証したアカウントの認証情報用",
+                "operationId": "me",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "メッセージ",
+                                            "type": "string",
+                                            "example": "massage"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
