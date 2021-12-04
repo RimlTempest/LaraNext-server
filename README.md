@@ -202,11 +202,6 @@ $ cd LaraNext-server/
 $ sail up
 ```
 
-バックグラウンド起動する
-```bash
-$ sail up -d
-```
-
 終了する  
 `ctrl + c`
 
@@ -215,62 +210,89 @@ $ sail up -d
 
 sailを起動する
 ```bash
-sail up	
+$ sail up	
 ```
 
 バックグラウンドでsailを起動する
 ```bash
-sail up -d	
+$ sail up -d	
 ```
 
 sailをシャットダウンする
 ```bash
-sail down	
+$ sail down	
 ```
 
 sailを停止する
 ```bash
-sail stop	
+$ sail stop	
 ```
 
 PHP実行コンテナにsailユーザーでログインする
 ```bash
-sail shell	
+$ sail shell	
 ```
 
 PHP実行コンテナにrootでログインする
 ```bash
-sail root-shell	
+$ sail root-shell	
 ```
 
 composerコマンドを実行する
 ```bash
-sail composer	
+$ sail composer	
 ```
 
 artisanコマンドを実行する
 ```bash
-sail artisan	
+$ sail artisan	
 ```
 
 npmコマンドを実行する
 ```bash
-sail npm	
+$ sail npm	
 ```
 
 nodeコマンドを実行する
 ```bash
-sail node	
+$ sail node	
 ```
 
 PHPUnitのテスト実行
 ```bash
-sail test	
+$ sail test	
 ```
 
 PHPUnitのテストのオプションも指定できる
 ```bash
-sail test --group orders	
+$ sail test --group orders	
+```
+
+### コンテナ内
+
+viewのキャッシュを削除する
+```bash
+$ php artisan view:clear
+```
+
+viewのキャッシュを削除する
+```bash
+$ php artisan view:clear
+```
+
+ローカルキャッシュのキャッシュを削除する
+```bash
+$ php artisan cache:clear
+```
+
+ルーティングのキャッシュを削除する
+```bash
+$ php artisan route:clear
+```
+
+ルーティングの確認
+```bash
+$ php artisan route:list
 ```
 
 ## デバックURL
@@ -287,6 +309,8 @@ http://localhost:8025
 RedisInsight  
 http://localhost:8001  
   
+Swagger
+http://localhost/api/documentation
 
 ## License
 
